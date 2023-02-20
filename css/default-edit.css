@@ -15,16 +15,18 @@
 }
 .default-button:hover {
     color: var(--color);
-    background: #3f67f7;
+    background: #2152FF;
 }
 .default-button--bordered {
     border-color: #EFD7B3;
     background: transparent;
     color: #E7EFF8;
+    transition: 0.3s;
 }
 .default-button--bordered:hover {
-    background: #EFD7B3;
-    color: var(--theme__color1);
+    background-color: transparent;
+    color: #E7EFF8;
+    box-shadow: 8px 8px 10px 3px #efd7b348;
 }
 /* buttons-end */
 

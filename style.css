@@ -153,7 +153,7 @@ p:last-child{
   transition: 0.2s;
 }
 .main-menu > ul > li > a:hover {
-  color: var(--theme__color1);
+  /* color: var(--theme__color1); */
 }
 .main-menu > ul > li > a:hover {
 
@@ -431,12 +431,19 @@ p:last-child{
   display: flex;
   align-items: center;
 }
+.services-slide .bt-txt-button .txt {
+  transition: 0.3s;
+}
+.services-slide .bt-txt-button:hover .txt {
+  text-shadow: 5px 5px 10px #efd7b3ee;
+  color: #F9E9C2;
+}
 .services-slide .bt-txt-button i {
   font-size: 28px;
   transition: 0.3s;
 }
 .services-slide .bt-txt-button:hover i {
-  transform: translate(5px,0);
+  /* transform: translate(5px,0); */
 }
 
 .slider-arrow-1 .owl-nav {
@@ -581,6 +588,6 @@ p:last-child{
   transition: 0.3s;
 }
 .footer-menu li a:hover {
-  color: var(--theme__color1);
+  /* color: var(--theme__color1); */
 }
 /* ---footer-section---end */
