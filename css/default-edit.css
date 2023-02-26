@@ -26,7 +26,7 @@
 .default-button--bordered:hover {
     background-color: transparent;
     color: #E7EFF8;
-    box-shadow: 8px 8px 8px 3px #efd7b360;
+    box-shadow: 5px 5px 8px 3px #efd7b360;
 }
 /* buttons-end */
 

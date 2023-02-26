@@ -157,7 +157,7 @@ p:last-child{
   color: #F9E9C2;
 }
 .main-menu > ul > li > a.icon-a:hover {
-  filter: drop-shadow(5px 5px 10px #efd7b3ee);
+  /* filter: drop-shadow(5px 5px 10px #efd7b3ee); */
 }
 .main-menu > ul > li > a:hover {
 

@@ -41,7 +41,7 @@
     responsive: {
       0: {
         items: 1,
-        stagePadding: 20,
+        stagePadding: 0,
         margin: 10,
       },
       575: {
