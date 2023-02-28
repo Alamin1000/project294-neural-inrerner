@@ -25,7 +25,8 @@
   });
 
   // owl-carousel
-  $(".services-slider-active").owlCarousel({
+  let serviceSlider = $(".services-slider-active");
+  serviceSlider.owlCarousel({
     loop: false,
     margin: 16,
     responsiveClass: true,
@@ -34,6 +35,7 @@
     items: 2,
     dotsEach: 1,
     dots: true,
+    onTranslated: serviceSliderCallback,
     navText: [
       '<i class="far fa-chevron-left"></i>',
       '<i class="far fa-chevron-right"></i>',
@@ -54,6 +56,9 @@
       1199: {},
     },
   });
+  function serviceSliderCallback() {
+    // console.log("sliding");
+  }
 })(jQuery);
 
 $(document).ready(function () {

@@ -278,6 +278,25 @@
     .service-q-wrapper {
         gap: 15px;
     }
+
+    .about-bg-glow {
+        width: 100%;
+    }
+    .about-section {
+        z-index: 2;
+    }
+
+    .team-section {
+        position: relative;
+    }
+    .team-mobile-glow {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        transform: translate(0,-30%);
+    }
+
 }
 
 
