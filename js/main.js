@@ -35,7 +35,6 @@
     items: 2,
     dotsEach: 1,
     dots: true,
-    onTranslated: serviceSliderCallback,
     navText: [
       '<i class="far fa-chevron-left"></i>',
       '<i class="far fa-chevron-right"></i>',
@@ -56,9 +55,19 @@
       1199: {},
     },
   });
-  function serviceSliderCallback() {
-    // console.log("sliding");
-  }
+  serviceSlider.on("changed.owl.carousel", function (event) {
+    setTimeout(function () {
+      let sliderLength = serviceSlider[0].querySelectorAll(".owl-item").length;
+      let lastDetect = serviceSlider[0]
+        .querySelectorAll(".owl-item")
+        [sliderLength - 1].classList.contains("active");
+      if (lastDetect) {
+        serviceSlider[0].classList.add("last-child-appear");
+      } else {
+        serviceSlider[0].classList.remove("last-child-appear");
+      }
+    }, 1);
+  });
 })(jQuery);
 
 $(document).ready(function () {

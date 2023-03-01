@@ -435,7 +435,12 @@ p:last-child{
   position: absolute;
   top: 0;
   right: 0;
+  transition: 0.3s;
 }
+.services-slider.last-child-appear .owl-stage-outer::after {
+  opacity: 0;
+}
+
 .services-slider .owl-stage {
   padding-left: 0 !important;
 }
